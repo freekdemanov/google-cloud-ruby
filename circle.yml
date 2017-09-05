@@ -34,6 +34,13 @@ dependencies:
     - rvm-exec 2.3.1 gem install bundler
     - rvm-exec 2.2.5 gem install bundler
     - rvm-exec 2.0.0-p648 gem install bundler
+    # work around Could not find public_suffix-2.0.5 in any of the sources
+    - gem install public_suffix -v 2.0.5
+    - rvm-exec 2.4.0 gem install public_suffix -v 2.0.5
+    - rvm-exec 2.4.0 gem install public_suffix -v 2.0.5
+    - rvm-exec 2.3.1 gem install public_suffix -v 2.0.5
+    - rvm-exec 2.2.5 gem install public_suffix -v 2.0.5
+    - rvm-exec 2.0.0-p648 gem install public_suffix -v 2.0.5
 
   override:
     # The following command installs dependencies for 2.1.9
